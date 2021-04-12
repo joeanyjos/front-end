@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>McDonald's Muntbergweg</title>
+    <link rel="stylesheet" href="./CSS/CSS.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <div id="logo">
+            <h1>McDonald's Muntbergweg</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="front.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li class="current"><a href="reserveer.html">RESERVEER</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+    <h1> Reservering Maken</h1>
+        <form>
+            <input type="text" placeholder="Achternaam" name="achternaam" id="achternaam" required>
+            <input type="text" placeholder="Voornaam" name="voornaam" id="voornaam" required>
+            <input type="tel" placeholder="Telefoon" name="phone" id="phone" required>
+            <input type="text" placeholder="Email" name="email" id="email" required>
+            <input type="text" placeholder="Naam Jarige" name="jarige" id="jarige" required>
+            <p>Datum Feest</p><input type="date" placeholder="Datum Feest" name="bday" required>
+            <p>Geslacht Kind</p><input type="radio" name="gender" value="female"> Meisje
+            <input type="radio" name="gender" value="male" required> Jongen
+            <p>Tijd:</p>
+            <select name = "tijd" required>
+                <option value = "1">Aantal uren</option>
+                <option value = "2">1 uur</option>
+                <option value = "3">1 uur 30 minuten</option>
+                <option value = "4">2 uur</option>
+            </select>
+            <p>Aantal kinderen:</p>
+                <select name = "kids" required>
+                    <option value = "1">Aantal kinderen</option>
+                    <option value = "2">1</option>
+                    <option value = "3">2</option>
+                    <option value = "4">3</option>
+                    <option value = "5">4</option>
+                    <option value = "6">5</option>
+                    <option value = "7">6</option>
+                    <option value = "8">7</option>
+                    <option value = "9">8</option>
+                    <option value = "10">9</option>
+                    <option value = "11">10</option>
+                    <option value = "12">11</option>
+                    <option value = "13">12</option>
+                </select>
+            <p> Aantal ouders:</p>
+                <input type="number" name="ouders" id="ouders" required>
+            <p>Met begeleding:</p>
+                <input type="radio" name="begeleiding" value="ja">Ja
+                <input type="radio" name="begeleiding" value="nee">Nee
+            <p>Soort feest</p> <input type="radio" name="soort" value="burger"> Hamburger Feestje
+                <input type="radio" name="soort" value="schmink"> Schmink Feestje
+            <p>Extra Informatie:</p>
+                <textarea name="comment" rows="5" cols="40"></textarea>
+            <input type="submit">
+
+        </form>
+
+<footer>
+    <p>McDonald's, Copyright &copy; 2021</p>
+</footer>
+</body>
+</html>
